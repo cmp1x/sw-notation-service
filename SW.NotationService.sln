@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SW.NotationService.Web", "SW.NotationService.Web\SW.NotationService.Web.csproj", "{484431ED-BED7-454B-AA94-555690FA2790}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SW.NotationService.Web", "SW.NotationService.Web\SW.NotationService.Web.csproj", "{484431ED-BED7-454B-AA94-555690FA2790}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SW.NotationService.Core.Tests", "SW.NotationService.Core.Tests\SW.NotationService.Core.Tests.csproj", "{FE0677CB-3561-4928-A590-56DB0E4DAF5D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SW.NotationService.Core.Tests", "SW.NotationService.Core.Tests\SW.NotationService.Core.Tests.csproj", "{FE0677CB-3561-4928-A590-56DB0E4DAF5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SW.NotationService.Core", "SW.NotationService.Core\SW.NotationService.Core.csproj", "{EFA1E21D-4865-49B1-AE80-15BFB3BA74D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SW.NotationService.Repository", "SW.NotationService.Repository\SW.NotationService.Repository.csproj", "{ED273321-47EC-49AC-99AF-B324EC362622}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{FE0677CB-3561-4928-A590-56DB0E4DAF5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE0677CB-3561-4928-A590-56DB0E4DAF5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE0677CB-3561-4928-A590-56DB0E4DAF5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFA1E21D-4865-49B1-AE80-15BFB3BA74D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFA1E21D-4865-49B1-AE80-15BFB3BA74D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFA1E21D-4865-49B1-AE80-15BFB3BA74D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFA1E21D-4865-49B1-AE80-15BFB3BA74D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED273321-47EC-49AC-99AF-B324EC362622}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED273321-47EC-49AC-99AF-B324EC362622}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED273321-47EC-49AC-99AF-B324EC362622}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED273321-47EC-49AC-99AF-B324EC362622}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
