@@ -18,7 +18,7 @@
 
         public int DeadTimeMs { get; set; }
 
-        public int DurationMa { get; set; }
+        public int DurationMs { get; set; }
 
         public Boolean Private { get; set; }
 
