@@ -30,10 +30,8 @@ namespace SW.NotationService.Web
             services.AddControllers();
 
             services.AddSwaggerGen();
-
-            services.AddDbContext<NotationDbContext>(
-                options => options.UseSqlServer(
-                    this.Configuration.GetConnectionString("DefaultConnection")));
+            
+            services.AddRepositoryService(this.Configuration.GetConnectionString("DefaultConnection"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
