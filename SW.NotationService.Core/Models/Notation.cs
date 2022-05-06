@@ -1,4 +1,4 @@
-﻿namespace SW.NotationService.Core.NotationModel
+﻿namespace SW.NotationService.Core.Model
 {
     using System;
 
