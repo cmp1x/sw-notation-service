@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SW.NotationService.Core\SW.NotationService.Core.csproj" />
+    <ProjectReference Include="..\SW.NotationService.Repository\SW.NotationService.Repository.csproj" />
   </ItemGroup>
 
 
