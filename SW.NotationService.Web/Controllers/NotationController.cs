@@ -1,46 +1,36 @@
 ﻿namespace SW.NotationService.Web.Controllers
 {
     using Microsoft.AspNetCore.Mvc;
-    using SW.NotationService.Core.Model;
-    using System.Collections.Generic;
-    using System.Linq;
+    using SW.NotationService.Repository.Repositories;
 
     [ApiController]
     [Route("[Controller]")]
     public class NotationController : ControllerBase
     {
-        private IEnumerable<Notation> exampleNotations;
+        private readonly INotationRepository notationRepository;
 
-        public NotationController()
+        public NotationController(INotationRepository notationRepository)
         {
-            this.exampleNotations = new List<Notation>()
-            {
-                new Notation()
-                {
-                    Id = "1",
-                    SongName = "Vo Lusiyah",
-                    ArtistName = "Natalia"
-                }
-            };
+            this.notationRepository = notationRepository;
         }
 
         [HttpGet]
         public IActionResult Get()
         {
-            return Ok(this.exampleNotations);
+            return Ok(this.notationRepository.GetAll());
         }
 
         [HttpGet("id")]
         public IActionResult GetNotation(string id)
         {
-            var targetNotation = this.exampleNotations.FirstOrDefault(n => n.Id == id);
-            
+            var targetNotation = this.notationRepository.Get(id);
+
             if (targetNotation is null)
             {
                 return NotFound();
             }
-            
-            return Ok(this.exampleNotations.FirstOrDefault(n => n.Id == id));
+
+            return Ok(targetNotation);
         }
     }
 }
