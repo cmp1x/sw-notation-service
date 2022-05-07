@@ -34,6 +34,8 @@ namespace SW.NotationService.Web
             {
                 app.UseDeveloperExceptionPage();
 
+                app.DbInitialize();
+
                 app.UseSwagger();
 
                 app.UseSwaggerUI(c =>
